@@ -169,17 +169,21 @@
     <!-- contact section design -->
 <section class="contact" id="contact">
   <h2 class="heading">Contact <span>Me!</span></h2>
-  <form onsubmit="sendEmail(); reset(); return false;">
+  <form action="https://formsubmit.co/abubakarfarooq13@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_autoresponse" value="Thank you for contacting me.">
+
     <div class="input-box">
-      <input type="text" id="name"  placeholder="Full Name">
-      <input type="email" id="email" placeholder="Email Address">
+      <input type="text" name="name" id="name" placeholder="Full Name">
+      <input type="email" name="email" id="email" placeholder="Email Address">
     </div>
     <div class="input-box">
-      <input type="number" id="phone"  placeholder="Mobile Number">
-      <input type="text" id="subject"  placeholder="Email Subject">
+      <input type="number" name="number" id="phone" placeholder="Mobile Number">
+      <input type="text" name="subject" id="subject"  placeholder="Email Subject">
     </div>
-    <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+    <textarea name="" name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
     <input type="submit" value="Send Message" class="btn">
+    <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
   </form>
 </section>
     <!-- footer design -->
@@ -202,6 +206,6 @@
     <!-- custom js -->
     <script src="js/script.js"></script>
      <!-- contact me  -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+<!--     <script src="https://smtpjs.com/v3/smtp.js"></script> -->
   </body>
 </html>
