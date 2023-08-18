@@ -64,9 +64,9 @@ function sendEmail(){
         Username : "sameramalik13@gmail.com",
         Password : "1ADC88DD9B14F48B9F17D05ACEC345419EB7",
         
-        To : 'abubakarfarooqweb@gmail.com',
+        To : "abubakarfarooqweb@gmail.com",
         From : document.getElementById("email").value,
-        Subject : "Subject: " ,
+        Subject : "Subject: " + document.getElementById("subject").value,
         Body : "Name: " + document.getElementById("name").value
               + "<br> Email: " + document.getElementById("email").value
               + "<br> Phone No: " + document.getElementById("phone").value
