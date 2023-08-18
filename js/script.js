@@ -61,8 +61,8 @@ const typed = new Typed('.multiple-text', {
 function sendEmail(){
     Email.send({
         Host : "smtp.elasticemail.com",
-        Username : "abubakarfarooq13@gmail.com",
-        Password : "E3A020BC332DF5B22B28D1A91EC08DB6369D",
+        Username : "sameramalik13@gmail.com",
+        Password : "1ADC88DD9B14F48B9F17D05ACEC345419EB7",
         
         To : 'abubakarfarooqweb@gmail.com',
         From : document.getElementById("email").value,
