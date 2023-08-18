@@ -57,3 +57,22 @@ const typed = new Typed('.multiple-text', {
     backDelay:1000,
     loop:true
 });
+/*==================== contact me ====================*/
+function sendEmail(){
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "abubakarfarooq13@gmail.com",
+        Password : "E3A020BC332DF5B22B28D1A91EC08DB6369D",
+        
+        To : 'abubakarfarooqweb@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "Subject: " ,
+        Body : "Name: " + document.getElementById("name").value
+              + "<br> Email: " + document.getElementById("email").value
+              + "<br> Phone No: " + document.getElementById("phone").value
+              + "<br> Message: " + document.getElementById("message").value
+    
+    }).then(
+      message => alert("Message Sent Successfully")
+    );
+    }
