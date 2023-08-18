@@ -58,21 +58,21 @@ const typed = new Typed('.multiple-text', {
     loop:true
 });
 /*==================== contact me ====================*/
-function sendEmail(){
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "sameramalik13@gmail.com",
-        Password : "1ADC88DD9B14F48B9F17D05ACEC345419EB7",
+// function sendEmail(){
+//     Email.send({
+//         Host : "smtp.elasticemail.com",
+//         Username : "sameramalik13@gmail.com",
+//         Password : "1ADC88DD9B14F48B9F17D05ACEC345419EB7",
         
-        To : "abubakarfarooqweb@gmail.com",
-        From : document.getElementById("email").value,
-        Subject : "Subject: " + document.getElementById("subject").value,
-        Body : "Name: " + document.getElementById("name").value
-              + "<br> Email: " + document.getElementById("email").value
-              + "<br> Phone No: " + document.getElementById("phone").value
-              + "<br> Message: " + document.getElementById("message").value
+//         To : "abubakarfarooqweb@gmail.com",
+//         From : document.getElementById("email").value,
+//         Subject : "Subject: " + document.getElementById("subject").value,
+//         Body : "Name: " + document.getElementById("name").value
+//               + "<br> Email: " + document.getElementById("email").value
+//               + "<br> Phone No: " + document.getElementById("phone").value
+//               + "<br> Message: " + document.getElementById("message").value
     
-    }).then(
-      message => alert("Message Sent Successfully")
-    );
-    }
+//     }).then(
+//       message => alert("Message Sent Successfully")
+//     );
+//     }
